@@ -138,7 +138,7 @@ def main():
     args = parser.parse_args()
     start_id = args.start_id
     end_id = args.end_id
-    if not end_id or end_id <= start_id:
+    if not end_id or end_id < start_id:
         end_id = start_id
     download_books(start_id, end_id)
 
